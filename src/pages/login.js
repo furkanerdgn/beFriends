@@ -1,19 +1,25 @@
 import {useRef,useEffect, useState} from "react";
 import Input from "../components/Input";
 import {AiFillFacebook} from "react-icons/ai"
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../store/auth";
 import {useNavigate,useLocation} from "react-router-dom"
 import {login} from "../firebase.js"
+import { Navigate } from "react-router-dom";
 
-export default function Login(){ 
-
+export default function Login(){
          const navigate = useNavigate()
          const location = useLocation()
          const ref = useRef()
          const [username,setUserName] = useState("")
          const [password,setUserPassword] = useState("")
          const enabled = username && password;
+         const user = useSelector(state => state.auth.user)
+         useEffect(() => {
+          if(user){
+              <Navigate to="/"/>
+          }
+      }, [user])
          
          useEffect(()=>{
            let images = ref.current.querySelectorAll("img"),

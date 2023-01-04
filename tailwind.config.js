@@ -10,8 +10,12 @@ module.exports = {
       },
       backgroundImage:{
         "logo-pattern":"url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png)",
+      },
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+      },
       }
-    },
   },
   plugins: [],
 }
