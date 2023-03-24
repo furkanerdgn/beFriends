@@ -28,6 +28,5 @@ yarn-error.log*
 #img
 *.jpg
 *.png
-*.svg
 *.PNG
 src/firebase.js
