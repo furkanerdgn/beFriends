@@ -1,11 +1,10 @@
 import { useSelector } from "react-redux";
 import Header from "../components/Header";
-import { downloadImage, profileUpdate } from "../firebase";
+import { downloadImage } from "../firebase";
 import UserSvg from "../svgs/UserSvg.svg";
 import Footer from "../components/Footer";
-import { useEffect, useRef, useState } from "react";
-import { profilePhotoUpdate } from "../firebase";
-import { useRouteError } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import { addFollower, removeFollower } from "../firebase";
 import { db } from "../firebase";
 import { doc, getDoc } from "firebase/firestore";

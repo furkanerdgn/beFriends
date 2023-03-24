@@ -1,11 +1,9 @@
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Input from "../components/Input";
-import { AiFillFacebook } from "react-icons/ai";
-import { useDispatch, useSelector } from "react-redux";
-import { setUser } from "../store/auth";
+import {  useSelector } from "react-redux";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { signUp } from "../firebase.js";
-import { Navigate } from "react-router-dom";
+
 import Footer from "../components/Footer";
 import beFriends from "../assets/logo.png";
 

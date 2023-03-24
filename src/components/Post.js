@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
-import { useRef, useState } from "react";
-import auth from "../store/auth";
+import { useState } from "react";
 import userSvg from "../svgs/UserSvg.svg";
 import Heart from "../svgs/Heart";
 import Bookmark from "../svgs/Bookmark";

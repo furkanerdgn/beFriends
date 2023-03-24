@@ -1,10 +1,7 @@
 import { useSelector } from "react-redux";
 import Header from "../components/Header";
-import ArrowDown from "../svgs/ArrowDownSvg.svg";
-import Chat from "../svgs/ChatSvg.svg";
-import UserSvg from "../svgs/UserSvg.svg";
 import MessageSvg from "../svgs/MessageSvg.svg";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Aside from "../components/Aside";
 
 export default function Message() {

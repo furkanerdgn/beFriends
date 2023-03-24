@@ -1,7 +1,6 @@
 import phone from "../svgs/PhoneSvg.svg";
 import video from "../svgs/VideoSvg.svg";
 import information from "../svgs/InfoSvg.svg";
-import { useSelector } from "react-redux";
 import userSvg from "../svgs/UserSvg.svg";
 import Talk from "./Talk";
 import ChatInput from "./ChatInput";
